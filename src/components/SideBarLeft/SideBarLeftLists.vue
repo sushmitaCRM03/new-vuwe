@@ -1,9 +1,7 @@
 <script>
 import Icons from '@/components/Icons'
 export default {
-  components: {
-    Icons
-  }
+ 
 }
 </script>
   
@@ -17,9 +15,11 @@ export default {
           Home
         </h4>
       </router-link>
-    </li>
+    </li
+    
     <li>
-      <router-link to="/explore" tag="a">
+      <router-link to="/explore" 
+      tag="a">
         <icons icon="explore-fill" v-if="$route.name === 'Explore'" />
         <icons icon="explore" v-else />
         <h4 :class="{ active: $route.name === 'Explore' }">
@@ -58,7 +58,7 @@ export default {
         </h4>
       </router-link>
     </li>
-    <li class="lists">
+    <li :class="lists">
       <router-link to="/lists" tag="a">
         <icons icon="lists-fill" v-if="$route.name === 'Lists'" />
         <icons icon="lists" v-else />
@@ -80,7 +80,7 @@ export default {
       <router-link to="/More" tag="a">
         <icons icon="more-fill" v-if="$route.name === 'More'" />
         <icons icon="more" v-else />
-        <h4 :class="{ active: $route.name === 'More' }">
+        <h4 :class="{ active: route.name === 'More' }">
           More
         </h4>
       </router-link>
