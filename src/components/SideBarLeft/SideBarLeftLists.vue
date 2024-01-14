@@ -18,6 +18,7 @@ export default {
         </h4>
       </router-link>
     </li>
+    
     <li>
       <router-link to="/explore" tag="a">
         <icons icon="explore-fill" v-if="$route.name === 'Explore'" />
